@@ -3,25 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Service Worker Example</title>
-        <script type="text/javascript" src="/serviceWorker/script/main.js"></script>
-        <link rel="stylesheet" type="text/css" href="/serviceWorker/styles/main.css">
+        <script type="text/javascript" src="/lab-serviceWorker-basics/script/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="/lab-serviceWorker-basics/styles/main.css">
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     </head>
     <body>
     <h1>Service Worker Example</h1>
     <img src="https://developers.google.com/web/fundamentals/getting-started/primers/imgs/sw-lifecycle.png" alt="serviceWorker lifecycle">
 
-    <script>
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/serviceWorker/sw.js').then(function(registration) {
-            // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }).catch(function(err) {
-            // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
-          });
-        }
-        
-    </script>
+
     </body>
 </html>
